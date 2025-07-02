@@ -146,7 +146,7 @@ main {
   color: #0c151d;
 }
 
-.skills-header{
+.options{
   margin: 6rem 0;
   padding:1rem 2rem;
   display: flex;
@@ -157,7 +157,7 @@ main {
   border-radius: var(--comon-border-radius);
   background-color: var(--theme-btn-bg);
 }
-.skills-header button{
+.options button{
   height: 6rem;
   border: none;
   border-radius: var(--comon-border-radius);
@@ -167,11 +167,11 @@ main {
   color: var(--text-color);
 }
 
-.skills-header button:nth-child(2){
+.options button:nth-child(2){
   background-color: var(--theme-btn-bg);
 }
 
-.skills-container{
+.portfolio-container{
   display: grid;
   column-gap: 4rem;
   row-gap: 5rem;
@@ -184,6 +184,23 @@ main {
   height: 200px;
   border-radius: 1rem;
   filter: brightness(90%) grayscale(100%) contrast(90%);
+}
+
+.skills-container{
+  display: grid;
+  column-gap: 4rem;
+  row-gap: 5rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  width: 100%;
+  height: 200px;
+  border-radius: 1rem;
+  filter: brightness(90%) grayscale(100%) contrast(90%);
+
+}
+
+.hidden{
+  display: none;
 }
 
 footer{
@@ -214,13 +231,13 @@ footer{
     font-size: 3rem;
   }
 
-  .skills-header{
+  .options{
     width: 95%;
     display: flex;
   justify-self: center;
   }
 
-  .skills-container{
+  .portfolio-container{
   display: grid;
   row-gap: 3rem;
   grid-template-columns: repeat(1, 1fr);
