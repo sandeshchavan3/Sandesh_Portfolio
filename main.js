@@ -1,7 +1,7 @@
 const skillsDiv= document.getElementById("skills-div");
 const portDiv= document.getElementById("port-div")
 const skillsBtn= document.getElementById("skills-btn");
-const portBtn= document.getElementById("port-btn")
+const portBtn= document.getElementById("port-btn");
 
 function toggleTheme() {
     const htmlEl = document.documentElement;
@@ -17,14 +17,14 @@ function showPortfolio(){
     skillsDiv.classList.add("hidden");
     portDiv.classList.remove("hidden");
 
-    skillsBtn.style.backgroundColor("var(--bg-color)");
-    portBtn.style.backgroundColor("var(--theme-btn-bg)");
+    skillsBtn.style.backgroundColor="var(--theme-btn-bg)";
+    portBtn.style.backgroundColor="var(--bg-color)";
 }
 
 function showSkills(){
     skillsDiv.classList.remove("hidden");
     portDiv.classList.add("hidden");
 
-    skillsBtn.style.backgroundColor("var(--theme-btn-bg)");
-    portBtn.style.backgroundColor("var(--bg-color)");
+    skillsBtn.style.backgroundColor="var(--bg-color)";
+    portBtn.style.backgroundColor="var(--theme-btn-bg)";
 }
